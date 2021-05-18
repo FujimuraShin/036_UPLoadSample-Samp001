@@ -1,36 +1,35 @@
 <?php
     if(isset($_POST['send001'])){
         $tempfile=$_FILES['image']['tmp_name'];
-        var_dump($tempfile);
         //アップロード画像の移動先
         //$filename='/Applications/XAMPP/xampfiles/htdocs/upload_test/img/';
         //$filename='/xampp/htdocs/xampp/mineXAMPP/036_UPLoadSample-Samp001/img';
         //$filename=__DIR__.'/../img/';
-        $filename='./img/img001.jpg';
+        //$filename='./img/img001.jpg';
+        //$filename='https://azuredog88.sakura.ne.jp/UPLoad/img/img001.jpg';
+        $filename='/home/azuredog88/www/UpLoad/img/img001.jpg';
         //move_uploadede_file関数を利用して、アップロードした画像を指定した場所に移動させる
         move_uploaded_file($tempfile,$filename);
     }
 
     if(isset($_POST['send002'])){
         $tempfile=$_FILES['image']['tmp_name'];
-        var_dump($tempfile);
         //アップロード画像の移動先
         //$filename='/Applications/XAMPP/xampfiles/htdocs/upload_test/img/';
         //$filename='/xampp/htdocs/xampp/mineXAMPP/036_UPLoadSample-Samp001/img';
         //$filename=__DIR__.'/../img/';
-        $filename='./img/img002.jpg';
+        $filename='/home/azuredog88/www/UpLoad/img/img002.jpg';
         //move_uploadede_file関数を利用して、アップロードした画像を指定した場所に移動させる
         move_uploaded_file($tempfile,$filename);
     }
 
     if(isset($_POST['send003'])){
         $tempfile=$_FILES['image']['tmp_name'];
-        var_dump($tempfile);
         //アップロード画像の移動先
         //$filename='/Applications/XAMPP/xampfiles/htdocs/upload_test/img/';
         //$filename='/xampp/htdocs/xampp/mineXAMPP/036_UPLoadSample-Samp001/img';
         //$filename=__DIR__.'/../img/';
-        $filename='./img/img003.jpg';
+        $filename='/home/azuredog88/www/UpLoad/img/img003.jpg';
         //move_uploadede_file関数を利用して、アップロードした画像を指定した場所に移動させる
         move_uploaded_file($tempfile,$filename);
     }
